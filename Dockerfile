@@ -15,8 +15,8 @@ RUN chmod +x gradlew
 # Copy source
 COPY src ./src
 
-# Build the application (run full build including tests)
-RUN ./gradlew clean build --no-daemon
+# Build the application
+RUN ./gradlew clean bootJar --no-daemon
 
 # ---------- Runtime Stage ----------
 FROM eclipse-temurin:21-jre
