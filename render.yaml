@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: demo-service
+    env: docker
+    branch: main
+    dockerfilePath: Dockerfile
+    autoDeploy: true
